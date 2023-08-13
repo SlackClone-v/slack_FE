@@ -9,6 +9,7 @@ Slack을 클론코딩하는 **FrontEnd** 프로젝트입니다.
 프론트엔드
 
 - Next.js 13
+- React-Query
 
 백엔드
 
@@ -32,69 +33,6 @@ Slack을 클론코딩하는 **FrontEnd** 프로젝트입니다.
 - vercel
 
 ## 3. 프로젝트 구조
-
-> DDD(Domain-Driven Design)에 맞추어 설계를 하였습니다.
-
-```javascript
-.
-├── HELP.md
-├── README.md
-├── build.gradle
-├── gradle
-│   └── wrapper
-│       ├── gradle-wrapper.jar
-│       └── gradle-wrapper.properties
-├── gradlew
-├── gradlew.bat
-├── settings.gradle
-└── src
-    ├── main
-    │   ├── generated
-    │   ├── java
-    │   │   └── com
-    │   │       └── spring
-    │   │           └── slackClone
-    │   │               ├── SlackCloneApplication.java
-    │   │               ├── application
-    │   │               │   ├── channel
-    │   │               │   │   └── ChannelController.java
-    │   │               │   ├── message
-    │   │               │   │   └── MessageController.java
-    │   │               │   └── user
-    │   │               │       └── UserController.java
-    │   │               ├── domain
-    │   │               │   ├── channel
-    │   │               │   ├── message
-    │   │               │   └── user
-    │   │               │       ├── domain
-    │   │               │       │   └── User.java
-    │   │               │       ├── entity
-    │   │               │       │   └── UserEntity.java
-    │   │               │       ├── mapper
-    │   │               │       │   └── UserMapper.java
-    │   │               │       ├── repository
-    │   │               │       │   └── UserRepository.java
-    │   │               │       └── service
-    │   │               │           └── UserService.java
-    │   │               ├── infrastructure
-    │   │               │   ├── persistence
-    │   │               │   └── security
-    │   │               │       └── SecurityConfig.java
-    │   │               └── interfaces
-    │   │                   ├── channel
-    │   │                   │   └── ChannelRequestDto.java
-    │   │                   ├── message
-    │   │                   │   └── MessageRequestDto.java
-    │   │                   └── user
-    │   │                       ├── UserRequestDto.java
-    │   │                       └── UserResponseDto.java
-    │   └── resources
-    │       └── application.properties
-    └── test
-
-```
-
-![Untitled](https://github.com/instagramClone-v/instagram_BE/assets/107148237/7cf1b20e-2592-4c6a-8d43-8be2aad61bda)
 
 - **Web Layer**
   - 흔히 사용하는 컨트롤러 (@Controller) 와 JSP/Freemarker등의 뷰 템플릿 영역
