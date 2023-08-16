@@ -10,6 +10,7 @@ Slack을 클론코딩하는 **FrontEnd** 프로젝트입니다.
 
 - Next.js 13
 - React-Query
+- Recoil
 
 백엔드
 
